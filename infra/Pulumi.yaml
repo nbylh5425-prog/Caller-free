@@ -1,0 +1,11 @@
+name: caller-free-infra
+description: 'Privacy-focused communication infrastructure: WireGuard VPN, FreeSWITCH VoIP, Private DNS'
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
